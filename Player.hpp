@@ -22,6 +22,7 @@ public:
    // TO DO: implement this constructor
    Player(string name) {
       // TODO: implement this function properly
+      playerName = name;
       throw std::logic_error("not implemented yet");
    }
    
@@ -30,14 +31,17 @@ public:
    // TO DO: implement Player's copy constructor
    Player(const Player &p) {
       // TODO: implement this function properly
+      playerName = p.getName();
+      position = p.getPosition();
       throw std::logic_error("not implemented yet");
    }
    
    // assignment constructor
    // Player should make player's own copy of the die
    // TO DO: implement Player's assignment constructor
-   Player& operator=(const Player& p);
-   
+   Player& operator=(const Player& p){
+      return (position == p.getPosition() && playerName == p.getName());
+   }
    // destructor
    ~Player() { }
    
@@ -53,7 +57,12 @@ public:
    // If not, player moves to the new square = player's postion + die's face value
    // TO DO: implement this function to move player to the new postion
    //        after player rolls die. Position must be inside the board
-   int rollDieAndMove();
+   int rollDieAndMove(){
+      int move = die.roll()
+      if(position + move > GameBoard.[length]())
+         return position;
+      else if()
+   }
 private:
    string playerName;
    int position;
