@@ -17,5 +17,10 @@ Player& Player::operator=(const Player& p) {
 //        after player rolls die. Position must be inside the board
 int Player::rollDieAndMove() {
    // TODO: implement this function properly
-   throw std::logic_error("not implemented yet");
+   int move = die.roll()
+     if(position + move > GameBoard.[length]())
+         return position;
+     else 
+        return position + move;
+   
 }
