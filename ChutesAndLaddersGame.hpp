@@ -20,32 +20,45 @@ class ChutesAndLaddersGame {
 public:
    // TODO: implement the constructor with all your team members
    // constructor with the default value of 2 minimim players
-   ChutesAndLaddersGame(int nPlayers = MIN_NUMBER_OF_PLAYERS);
-
+   ChutesAndLaddersGame(int nPlayers = MIN_NUMBER_OF_PLAYERS){
+   Player one("Anthony");
+   Player two("Justin");
+   list.enqueue(one);
+   list.enqueue(two);
+   
+   }
+   
    // TODO: implement the destructor
    // destructor
-   ~ChutesAndLaddersGame();
+   ~ChutesAndLaddersGame(){
+   list.dequeue(one);                  
+   list.dequeue(two);
+   };
    
    // accessors
    // TO DO: implement the accessor to get the number Of Players
-   long getNumberOfPlayers() {
+   int getNumberOfPlayers() {
       // TODO: implement this function properly
-      throw std::logic_error("not implemented yet");
+      return MIN_NUMBER_OF_PLAYERS;
+      //throw std::logic_error("not implemented yet");
    }
    string getWinner() { return winner; }
    
    // TODO: implement this function properly
    // reset the game - (1) this will reset the position of each player to zero
-   void resetGame();
+   void resetGame(){
+   one.setPosition(0);
+   two.setPosition(0);
+   }
    
    // TODO: implement this function properly
    // play the Chutes and Ladders game
-   void playGame();
+   void playGame(); //what ?
 private:
    const int WINNING_POSITION = 100;
    
    string winner;       // the winner
    GameBoard gameBoard; // the game board
-
+   ArrayQueue<Player> list;
    // TO DO: use ArrayQueue to store the players
 };
