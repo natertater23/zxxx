@@ -11,28 +11,6 @@
 
 using namespace std;
 
-// TODO: implement the constructor with all your team members
-// constructor with the default value of a minimum players
-ChutesAndLaddersGame::ChutesAndLaddersGame(int nPlayers) : winner("no winner") {
-   // TODO: implement this function properly
-   throw std::logic_error("not implemented yet");
-}
-
-// TODO: implement the destructor
-// destructor - dequeue players from the queue
-ChutesAndLaddersGame::~ChutesAndLaddersGame() {
-   // TODO: implement this function properly
-   throw std::logic_error("not implemented yet");
-}
-
-// TO DO: implement this function properly
-// reset the game - rebuild the list of players
-//        (i.e., the list should be the same as in the constructor).
-//        Place all players at the figurative square zero
-void ChutesAndLaddersGame::resetGame() {
-   // TODO: implement this function properly
-   throw std::logic_error("not implemented yet");
-}
 
 // TO DO: implement this function properly
 // Play the chutes and ladders until a player reaches the winning square 100
@@ -46,6 +24,11 @@ void ChutesAndLaddersGame::resetGame() {
 //    - playGame returns after congratulating and printing the winner's name
 void ChutesAndLaddersGame::playGame() {
    // TODO: implement this function properly
-   throw std::logic_error("not implemented yet");
-   
+   //throw std::logic_error("not implemented yet");
+   while(gameOn){//implement gameOn to check if any player is on 100 
+   //players roll
+   //players moved
+   }
+   winner = findWinner();//implement findWinner
+  cout<< winner << " Won the Game!"; 
 }
