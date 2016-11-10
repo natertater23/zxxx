@@ -19,11 +19,11 @@ public:
    
    // Build the gameboard
    // TO DO: implement this function
-   void buildBoard(){
+   void buildBoard();// will implement in .cpp i think 
       
       
       
-   }
+   
    
    GameBoard() {
       // TODO: implement this function properly
