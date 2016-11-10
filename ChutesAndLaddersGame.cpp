@@ -25,7 +25,7 @@ using namespace std;
 void ChutesAndLaddersGame::playGame() {
    // TODO: implement this function properly
    //throw std::logic_error("not implemented yet");
-   while(gameOn){//implement gameOn to check if any player is on 100 
+   while(gameOn()){//implement gameOn to check if any player is on 100 
    //players roll
    //players moved
    }
