@@ -7,7 +7,8 @@
 // TO DO: implement Player's assignment operator
 Player& Player::operator=(const Player& p) {
    // TODO: implement this function properly
-   throw std::logic_error("not implemented yet");
+   return (position == p.getPosition() && playerName == p.getName());
+  
 }
 
 // return player's new position after player rolls die
