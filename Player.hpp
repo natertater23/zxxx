@@ -23,7 +23,8 @@ public:
    Player(string name) {
       // TODO: implement this function properly
       playerName = name;
-      throw std::logic_error("not implemented yet");
+      position = 0;
+      //hrow std::logic_error("not implemented yet");
    }
    
    // copy constructor
@@ -33,7 +34,7 @@ public:
       // TODO: implement this function properly
       playerName = p.getName();
       position = p.getPosition();
-      throw std::logic_error("not implemented yet");
+     // throw std::logic_error("not implemented yet");
    }
    
    // assignment constructor
