@@ -53,7 +53,7 @@ public:
    
    // TODO: implement this function properly
    // play the Chutes and Ladders game
-   void playGame(); //what ?
+   void playGame(); // implemented in /ccp
 private:
    const int WINNING_POSITION = 100;
    
