@@ -57,12 +57,7 @@ public:
    // If not, player moves to the new square = player's postion + die's face value
    // TO DO: implement this function to move player to the new postion
    //        after player rolls die. Position must be inside the board
-   int rollDieAndMove(){
-      int move = die.roll()
-      if(position + move > GameBoard.[length]())
-         return position;
-      else if()
-   }
+   int rollDieAndMove();
 private:
    string playerName;
    int position;
