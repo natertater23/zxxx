@@ -14,7 +14,8 @@ public:
 	ArrayQueue(int cap = DEF_CAPACITY);		// constructor from capacity
 	int size() const;				// number of items in the stack
 	bool empty() const;				// is the stack empty?
-	const E& front() const;	// get the top element
+	const E& front() const;
+	const E& rear() const;  // get the top element
 	void enqueue(const E& e);	// push element onto stack
 	void dequeue();				// pop the stack
 	void printAll();					// print all elements on stack to cout
@@ -43,6 +44,11 @@ template <typename E>				// return element at front of queue
 const E& ArrayQueue<E>::front() const {
 	if (empty()) throw length_error("front of empty queue");
 	return Q[f];
+}
+template <typename E>				// return element at front of queue
+const E& ArrayQueue<E>::rear() const {
+	if (empty()) throw length_error("front of empty queue");
+	return Q[r];
 }
 
 template <typename E>				// insert element to back of queue
