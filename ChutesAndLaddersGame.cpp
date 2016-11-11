@@ -11,6 +11,7 @@
 
 using namespace std;
 
+bool gameOn();
 
 // TO DO: implement this function properly
 // Play the chutes and ladders until a player reaches the winning square 100
@@ -23,12 +24,16 @@ using namespace std;
 //    - If player lands on the winning square 100, game is over
 //    - playGame returns after congratulating and printing the winner's name
 void ChutesAndLaddersGame::playGame() {
+   ChutesAndLaddersGame game = new ChutesAndLaddersGame(2);
+   
    // TODO: implement this function properly
    //throw std::logic_error("not implemented yet");
-   while(gameOn()){//implement gameOn to check if any player is on 100 
+   while(game.gameOn()){//implement gameOn to check if any player is on 100 
+      game.playGame()
    //players roll
    //players moved
    }
    winner = findWinner();//implement findWinner
   cout<< winner << " Won the Game!"; 
 }
+
