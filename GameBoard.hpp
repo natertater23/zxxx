@@ -26,16 +26,11 @@ public:
    
    
    GameBoard() {
-      // TODO: implement this function properly
-      buildboard();
-      //throw std::logic_error("not implemented yet");
+      buildboard();//DONE
    }
    
-   // If player lands on chutes or ladders, returns the new position.
-   // Otherwise, returns the player's current position.
-   // If the player's position is outside of the gameboard, throws index out of bounds exception
-   // TO DO: implement this function properly
-   int checkChutesLadders(int position) {
+   
+   int checkChutesLadders(int position) {//DONE
       if ((position < 0) || (position >= BOARD_SIZE)) {
          throw range_error("index out of bounds");
       }
@@ -47,12 +42,9 @@ public:
       if(chutes.at(i)==position)
          return chutesTo.at(i);
      }
-      
-         
-     
-      // TODO: implement this function properly
-      //throw std::logic_error("not implemented yet");
+      return position;
    }
+   
    
 private:
    // TO DO: add storage for squares including square of chutes and ladders
