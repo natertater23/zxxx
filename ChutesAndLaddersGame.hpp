@@ -64,14 +64,14 @@ public:
    // play the Chutes and Ladders game
    void playGame();// implemented in /ccp
      
-bool gameOn(){
-   for(int i = 0; i < list.size(); i++)
-   {
-      if(list.get(i).getPosition() == 100)
-         return false;
-   }
-   return true;
-}
+//bool gameOn(){
+ //  for(int i = 0; i < list.size(); i++)
+  // {
+  //    if(list.get(i).getPosition() == 100)
+   //      return false;
+ //  }
+ //  return true;
+//}
 private:
    const int WINNING_POSITION = 100;
    
