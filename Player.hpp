@@ -23,7 +23,6 @@ public:
    Player(string name) {
       playerName = name;
       position = 0;
-      die = new Die();
    }
    
    // copy constructor
@@ -33,7 +32,6 @@ public:
       // TODO: implement this function properly
       playerName = p.getName();
       position = p.getPosition();
-      die = new Die()
    }
    
    // assignment constructor
