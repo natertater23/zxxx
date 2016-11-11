@@ -55,7 +55,7 @@ public:
    void setName(string name) { playerName = name; }
    void setPosition(int location) { position = location; }
    string getName() const { return playerName; }
-   int getPostion() const { return position; }
+   int getPosition() const { return position; }
    Die getDie() { return die; }
    
    // return player's new position after player rolls die
