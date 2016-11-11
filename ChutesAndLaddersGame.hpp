@@ -45,8 +45,8 @@ public:
    string getWinner() {
       for(int i = 0; i < list.size(); i++)
    {
-      if(list.get(i).getPosition() == 100){
-         winner = list.get(i).getName;
+      if(list[i].getPosition() == 100){
+         winner = list[i].getName;
          return winner;
       }
    }
