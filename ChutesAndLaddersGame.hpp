@@ -42,7 +42,16 @@ public:
       return list.size();
       //throw std::logic_error("not implemented yet");
    }
-   string getWinner() { return winner; }
+   string getWinner() {
+      for(int i = 0; i < list.size(); i++)
+   {
+      if(list.get(i).getPosition() == 100){
+         winner = list.get(i).getName;
+         return winner;
+      }
+   }
+  
+ }
    
    // TODO: implement this function properly
    // reset the game - (1) this will reset the position of each player to zero
