@@ -31,8 +31,9 @@ public:
    // TODO: implement the destructor
    // destructor
    ~ChutesAndLaddersGame(){
-   list.dequeue(one);                  
-   list.dequeue(two);
+      delete [] list;
+ //  list.dequeue(one);                  
+   //list.dequeue(two);
    };
    
    // accessors
@@ -42,16 +43,6 @@ public:
       return list.size();
       //throw std::logic_error("not implemented yet");
    }
-   string getWinner() {
-      for(int i = 0; i < list.size(); i++)
-   {
-      if(list[i].getPosition() == 100){
-         winner = list[i].getName;
-         return winner;
-      }
-   }
-  
- }
    
    // TODO: implement this function properly
    // reset the game - (1) this will reset the position of each player to zero
