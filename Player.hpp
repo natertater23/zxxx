@@ -23,7 +23,7 @@ public:
    Player(string name) {
       playerName = name;
       position = 0;
-      die = new die();
+      die = new Die();
    }
    
    // copy constructor
@@ -33,7 +33,7 @@ public:
       // TODO: implement this function properly
       playerName = p.getName();
       position = p.getPosition();
-      die = new die()
+      die = new Die()
    }
    
    // assignment constructor
@@ -42,7 +42,7 @@ public:
    Player& operator=(const Player& p){//SHOULD BE DONE
         if (this != &d) {
            position = p.getPosition();
-           name = p.getName();
+           playerName = p.getName();
         }
       return *this;
    }
@@ -53,7 +53,7 @@ public:
    
    // getters and setters
    void setName(string name) { playerName = name; }
-   void setPostion(int location) { position = location; }
+   void setPosition(int location) { position = location; }
    string getName() const { return playerName; }
    int getPostion() const { return position; }
    Die getDie() { return die; }
