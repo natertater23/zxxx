@@ -26,7 +26,7 @@ public:
    
    
    GameBoard() {
-      buildboard();//DONE
+      buildBoard();//DONE
    }
    
    
