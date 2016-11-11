@@ -29,28 +29,21 @@ public:
       buildBoard();//DONE
    }
    
-   switch(position){
-      case ONE:
-         position = 38;
-         break;
-      case FOUR:
-         position = 34;
-         break;
-   }
-   
+
    
    int checkChutesLadders(int position) {//DONE
       if ((position < 0) || (position >= BOARD_SIZE)) {
          throw range_error("index out of bounds");
       }
-     for(int i = 0;i<ladders.size();i++){
-      if(ladders.at(i)==position)
-         return laddersTo.at(i);
-     }
-       for(int i = 0;i<chutes.size();i++){
-      if(chutes.at(i)==position)
-         return chutesTo.at(i);
-     }
+        switch(position){
+      case ONE:
+        return 38;
+         break;
+      case FOUR:
+         return 34;
+         break;
+   }
+   
       return position;
    }
    
@@ -58,10 +51,6 @@ public:
 private:
    // TO DO: add storage for squares including square of chutes and ladders
    // Requirement: use ExtendableVector to store the square
-   ExtendableVector<int> ladders = {1,4,9,21,28,36,51,71,80};//where the ladders are at
-   ExtendableVector<int> laddersTo = {38,14,31,42,84,44,67,91,100};//where these ladders lead to, index's align
-   ExtendableVector<int> chutes = {16,47,49,56,62,64,87,93,95,98};
-   ExtendableVector<int> chutesTo = {6,26,11,53,19,60,24,73,75,78};
    //ExtendableVector<int> gameVector;//board ? 
    //for(int i = 0;i < 100 ; i++){
    ///gameVector.insert(0,i+1);
