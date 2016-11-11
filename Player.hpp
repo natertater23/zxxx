@@ -38,7 +38,7 @@ public:
    // Player should make player's own copy of the die
    // TO DO: implement Player's assignment constructor
    Player& operator=(const Player& p){//SHOULD BE DONE
-        if (this != &d) {
+        if (this != &p) {
            position = p.getPosition();
            playerName = p.getName();
         }
