@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string>
 
+#include "ArrayQueue.h"
 #include "ChutesAndLaddersGame.hpp"
 #include "GameBoard.hpp"
 #include "Player.hpp"
