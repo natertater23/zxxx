@@ -30,7 +30,7 @@ void ChutesAndLaddersGame::playGame() {
    //throw std::logic_error("not implemented yet");
    while(gameOn){//implement gameOn to check if any player is on 100 
       int newPos = list.front().rollDieAndMove();
-      newPos = gameBoard.checkChutesLadders(newPos)
+      newPos = gameBoard.checkChutesLadders(newPos);
       list.front().setPosition(newPos);   
       list.enqueue(list.front());
       list.dequeue();
