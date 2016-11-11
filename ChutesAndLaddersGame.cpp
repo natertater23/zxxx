@@ -24,15 +24,15 @@ using namespace std;
 //    - If player lands on the winning square 100, game is over
 //    - playGame returns after congratulating and printing the winner's name
 void ChutesAndLaddersGame::playGame() {
-   ChutesAndLaddersGame game = new ChutesAndLaddersGame(2);
-    //int newPos = list.front().rollDieAndMove();
-      //list.front().setPosition(gameBoard.checkChutesLadders(newPos));   
-      //list.enqueue(list.front());
-      //list.dequeue();
+  // ChutesAndLaddersGame game = new ChutesAndLaddersGame(2);
+  
    // TODO: implement this function properly
    //throw std::logic_error("not implemented yet");
-   while(game.gameOn()){//implement gameOn to check if any player is on 100 
-      game.playGame()
+   while(gameOn()){//implement gameOn to check if any player is on 100 
+      int newPos = list.front().rollDieAndMove();
+      list.front().setPosition(gameBoard.checkChutesLadders(newPos));   
+      list.enqueue(list.front());
+      list.dequeue();
    //players roll
    //players moved
    }
