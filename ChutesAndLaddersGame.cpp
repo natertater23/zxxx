@@ -36,7 +36,7 @@ void ChutesAndLaddersGame::playGame() {
    //players roll
    //players moved
    }
-   winner = getWinner();//implement findWinner
-  cout<< winner << " Won the Game!"; 
+  string winner2 =  getWinner();//implement findWinner
+  cout<< winner2 << " Won the Game!"; 
 }
 
