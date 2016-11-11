@@ -53,12 +53,7 @@ public:
    
    // TODO: implement this function properly
    // play the Chutes and Ladders game
-   void playGame(){
-      int newPos = list.front().rollDieAndMove();
-      list.front().setPosition(gameBoard.checkChutesLadders(newPos));   
-      list.enqueue(list.front());
-      list.dequeue();
-   }// implemented in /ccp
+   void playGame();// implemented in /ccp
      
 bool gameOn(){
    for(int i = 0; i < list.size(); i++)
