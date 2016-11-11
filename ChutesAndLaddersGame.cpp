@@ -11,6 +11,8 @@
 
 using namespace std;
 
+
+
 // TO DO: implement this function properly
 // Play the chutes and ladders until a player reaches the winning square 100
 //    - Each player takes turn to roll the die and moves to the new square by invoking rollDieAndMove.
@@ -23,7 +25,10 @@ using namespace std;
 //    - playGame returns after congratulating and printing the winner's name
 void ChutesAndLaddersGame::playGame() {
    ChutesAndLaddersGame game = new ChutesAndLaddersGame(2);
-   
+    //int newPos = list.front().rollDieAndMove();
+      //list.front().setPosition(gameBoard.checkChutesLadders(newPos));   
+      //list.enqueue(list.front());
+      //list.dequeue();
    // TODO: implement this function properly
    //throw std::logic_error("not implemented yet");
    while(game.gameOn()){//implement gameOn to check if any player is on 100 
