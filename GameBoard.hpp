@@ -29,6 +29,15 @@ public:
       buildBoard();//DONE
    }
    
+   switch(position){
+      case ONE:
+         position = 38;
+         break;
+      case FOUr:
+         position = 34;
+         break;
+   }
+   
    
    int checkChutesLadders(int position) {//DONE
       if ((position < 0) || (position >= BOARD_SIZE)) {
