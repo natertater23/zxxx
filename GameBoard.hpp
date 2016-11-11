@@ -33,7 +33,7 @@ public:
       case ONE:
          position = 38;
          break;
-      case FOUr:
+      case FOUR:
          position = 34;
          break;
    }
