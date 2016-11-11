@@ -37,6 +37,8 @@ void ChutesAndLaddersGame::playGame() {
       list.dequeue();
       if(newPos == 100)
         gameOn = false;
+     
+          
    //players roll
    //players moved
    }
