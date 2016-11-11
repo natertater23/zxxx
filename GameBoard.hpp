@@ -40,9 +40,60 @@ public:
         return 38;
          break;
       case FOUR:
-         return 34;
+         return 14;
          break;
-   }
+       case NINE:
+         return 31;
+         break;
+       case TWENTY_ONE:
+         return 42;
+         break;
+       case TWENTY_EIGHT:
+        return 84;
+         break;
+      case THIRTY_SIX:
+         return 44;
+         break;
+       case FIFTY_ONE:
+         return 67;
+         break;
+       case SEVENTY_ONE:
+         return 91;
+         break;
+      case EIGHTY:
+        return 100;
+         break;
+      case SIXTEEN:
+         return 6;
+         break;
+       case FORTY_SEVEN:
+         return 26;
+         break;
+       case FORTY_NINE:
+         return 11;
+         break;
+       case FIFTY_SIX:
+        return 53;
+         break;
+      case SIXTY_TWO:
+         return 19;
+         break;
+       case SIXTY_FOUR:
+         return 60;
+         break;
+       case EIGHTY_SEVEN:
+         return 24;
+         break;
+      case NINETY_THREE:
+         return 73;
+         break;
+       case NINETY_FIVE:
+         return 75;
+         break;
+       case NINETY_EIGHT:
+         return 78;
+         break;      
+        }
    
       return position;
    }
