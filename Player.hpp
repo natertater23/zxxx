@@ -21,10 +21,9 @@ public:
    // player's initial position is at the figurative square 0
    // TO DO: implement this constructor
    Player(string name) {
-      // TODO: implement this function properly
       playerName = name;
       position = 0;
-      //hrow std::logic_error("not implemented yet");
+      die = new die();
    }
    
    // copy constructor
@@ -34,7 +33,7 @@ public:
       // TODO: implement this function properly
       playerName = p.getName();
       position = p.getPosition();
-     // throw std::logic_error("not implemented yet");
+      die = new die()
    }
    
    // assignment constructor
@@ -56,7 +55,12 @@ public:
    // If not, player moves to the new square = player's postion + die's face value
    // TO DO: implement this function to move player to the new postion
    //        after player rolls die. Position must be inside the board
-   int rollDieAndMove();
+   int rollDieAndMove(){
+      int roll = die.roll();  
+      if (position + roll > 100)
+         return position;
+      return position + roll;
+   }
 private:
    string playerName;
    int position;
