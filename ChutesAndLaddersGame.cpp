@@ -11,8 +11,6 @@
 
 using namespace std;
 
-bool gameOn();
-
 // TO DO: implement this function properly
 // Play the chutes and ladders until a player reaches the winning square 100
 //    - Each player takes turn to roll the die and moves to the new square by invoking rollDieAndMove.
