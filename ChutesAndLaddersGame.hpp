@@ -39,7 +39,7 @@ public:
    // TO DO: implement the accessor to get the number Of Players
    int getNumberOfPlayers() {
       // TODO: implement this function properly
-      return MIN_NUMBER_OF_PLAYERS;
+      return list.size();
       //throw std::logic_error("not implemented yet");
    }
    string getWinner() { return winner; }
@@ -47,13 +47,27 @@ public:
    // TODO: implement this function properly
    // reset the game - (1) this will reset the position of each player to zero
    void resetGame(){
-   one.setPosition(0);
-   two.setPosition(0);
+      one.setPosition(0);
+      two.setPosition(0);
    }
    
    // TODO: implement this function properly
    // play the Chutes and Ladders game
-   void playGame(); // implemented in /ccp
+   void playGame(){
+      int newPos = list.front().rollDieAndMove();
+      list.front().setPosition(gameBoard.checkChutesLadders(newPos));   
+      list.enqueue(list.front());
+      list.dequeue();
+   }// implemented in /ccp
+     
+bool gameOn(){
+   for(int i = 0; i < list.size(); i++)
+   {
+      if(list.get(i).getPosition() == 100)
+         return false;
+   }
+   return true;
+}
 private:
    const int WINNING_POSITION = 100;
    
