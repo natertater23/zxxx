@@ -39,7 +39,15 @@ public:
    // assignment constructor
    // Player should make player's own copy of the die
    // TO DO: implement Player's assignment constructor
-   Player& operator=(const Player& p);
+   Player& operator=(const Player& p){//SHOULD BE DONE
+        if (this != &d) {
+           position = p.getPosition();
+           name = p.getName();
+        }
+      return *this;
+   }
+   
+   
    // destructor
    ~Player() { }
    
@@ -55,8 +63,9 @@ public:
    // If not, player moves to the new square = player's postion + die's face value
    // TO DO: implement this function to move player to the new postion
    //        after player rolls die. Position must be inside the board
-   int rollDieAndMove(){
-      int roll = die.roll();  
+   int rollDieAndMove(){//SHOULD BE DONE
+      die.roll();
+      int roll = die.getFaceValue();  
       if (position + roll > 100)
          return position;
       return position + roll;
