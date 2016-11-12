@@ -7,9 +7,7 @@
 // TO DO: implement Player's assignment operator
 Player& Player::operator=(const Player& p) {
    // TODO: implement this function properly
-   this->position = p.getPosition();
-   this->playerName = p.getName();
-   return ;
+   return (playerName = p.getName) && (position = p.GetPosition);
   
 }
 
