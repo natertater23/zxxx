@@ -24,7 +24,6 @@ int Player::rollDieAndMove() {
    int move = die.getFaceValue();
      if(position + move > 100)
          return position;
-     else 
-        return position + move;
+       return position + move;
    
 }
