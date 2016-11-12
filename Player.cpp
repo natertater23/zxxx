@@ -20,7 +20,8 @@ Player& Player::operator=(const Player& p) {
 //        after player rolls die. Position must be inside the board
 int Player::rollDieAndMove() {
    // TODO: implement this function properly
-   int move = die.roll()
+   die.roll()
+   int move = die.getFaceValue();
      if(position + move > 100)
          return position;
      else 
