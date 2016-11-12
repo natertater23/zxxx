@@ -21,7 +21,7 @@ Player& Player::operator=(const Player& p) {
 int Player::rollDieAndMove() {
    // TODO: implement this function properly
    int move = die.roll()
-     if(position + move > GameBoard.[length]())
+     if(position + move > 100)
          return position;
      else 
         return position + move;
