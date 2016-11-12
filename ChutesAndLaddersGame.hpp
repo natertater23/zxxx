@@ -31,9 +31,8 @@ public:
    // TODO: implement the destructor
    // destructor
    ~ChutesAndLaddersGame(){
-      delete [] list;
- //  list.dequeue(one);                  
-   //list.dequeue(two);
+   list.dequeue(one);                  
+   list.dequeue(two);
    };
    
    // accessors
