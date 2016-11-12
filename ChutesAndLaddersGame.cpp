@@ -42,7 +42,7 @@ void ChutesAndLaddersGame::playGame() {
    //players roll
    //players moved
    }
-  string winner2 =  list.rear().getName();//implement findWinner
-  cout<< winner2 << " Won the Game!"; 
+  winner =  list.rear().getName();//implement findWinner
+  cout<< winner << " Won the Game!"; 
 }
 
