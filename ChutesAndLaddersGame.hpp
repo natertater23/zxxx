@@ -21,8 +21,10 @@ public:
    // TODO: implement the constructor with all your team members
    // constructor with the default value of 2 minimim players
    ChutesAndLaddersGame(int nPlayers = MIN_NUMBER_OF_PLAYERS){
-   list.enqueue(one);
-   list.enqueue(two);
+     Player one = new Player("Anthony");
+     Player two = new Player("Justin");
+     list.enqueue(one);
+     list.enqueue(two);
    
    }
    
@@ -62,8 +64,6 @@ public:
 //}
 private:
    const int WINNING_POSITION = 100;
-   Player one("Anthony");
-   Player two("Justin");
    string winner;       // the winner
    GameBoard gameBoard; // the game board
    ArrayQueue<Player> list;
