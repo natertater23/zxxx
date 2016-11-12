@@ -8,8 +8,8 @@
 Player& Player::operator=(const Player& p) {
    // TODO: implement this function properly
    this->position = p.getPosition();
-   this->playerName = p.getName());
-   return p;
+   this->playerName = p.getName();
+   return ;
   
 }
 
@@ -20,7 +20,7 @@ Player& Player::operator=(const Player& p) {
 //        after player rolls die. Position must be inside the board
 int Player::rollDieAndMove() {
    // TODO: implement this function properly
-   die.roll()
+   die.roll();
    int move = die.getFaceValue();
      if(position + move > 100)
          return position;
