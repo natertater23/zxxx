@@ -14,6 +14,6 @@
 void GameBoard::buildBoard() {
    // TODO: implement this function properly
    //idk what to do.... :(
-  position = checkChutesLadders(position);
+  //position = checkChutesLadders(position);
    //throw std::logic_error("not implemented yet");
 }
