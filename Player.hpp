@@ -46,6 +46,7 @@ public:
    // getters and setters
    void setName(string name) { playerName = name; }
    void setPosition(int location) { position = location; }
+   void setPostion(int location){position = location;}
    string getName() const { return playerName; }
    int getPosition() const { return position; }
     int getPostion() const { return position; }
