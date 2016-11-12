@@ -45,9 +45,13 @@ public:
    string getWinner(){return winner;}
    // TODO: implement this function properly
    // reset the game - (1) this will reset the position of each player to zero
-   void resetGame(){
-      one.setPosition(0);
-      two.setPosition(0);
+   void resetGame(){  
+      list.dequeue();
+       list.dequeue();
+     Player one = new Player("Anthony");
+     Player two = new Player("Justin");
+     list.enqueue(one);
+     list.enqueue(two);
    }
    
    // TODO: implement this function properly
