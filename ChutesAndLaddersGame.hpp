@@ -43,7 +43,7 @@ public:
       return list.size();
       //throw std::logic_error("not implemented yet");
    }
-   
+   string getWinner(){return winner;}
    // TODO: implement this function properly
    // reset the game - (1) this will reset the position of each player to zero
    void resetGame(){
